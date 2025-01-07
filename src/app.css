@@ -1,0 +1,840 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+}
+
+.app-contain{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    background-color: black;
+    position: fixed;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header article{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.header article img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.header article p{
+    font-weight: bold;
+    color: white;
+}
+
+.header nav{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    transition: 1s;
+}
+
+.header nav a{
+    color: white;
+    font-family: cursive;
+    transition: 1s;
+}
+
+.header nav a:hover{
+    color: cyan;
+    border-bottom: 2px solid cyan;
+}
+
+.header div{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header div input{
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.header div img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transform: translate(5px 5px);
+}
+
+.header .image{
+    width: 10%;
+    display: none;
+}
+
+.main{
+    width: 100%;
+    height: calc(100% - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding-top: 120px;
+}
+
+.main .home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main .home article{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.main .home article h1{
+    font-size: 45px;
+    align-self: center;
+}
+
+.main .home article p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.main .home article p b{
+    letter-spacing: 0px;
+    padding: 10px 20px;
+}
+
+.main .home article p button{
+    width: fit-content;
+    padding: 10px 20px;
+    align-self: center;
+    outline: none;
+    border: none;
+    font-size: large;
+    background-color: cyan;
+    color: black;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.main .home article p button a{
+    color: black;
+}
+
+.main .home article p button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.main .home .next{
+    width: 100%;
+    height: fit-content;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.main .home .next h1{
+    width: fit-content;
+    align-self: center;
+    font-size: 50px;
+    font-weight: bold;
+    border-bottom: 1px solid cyan;
+}
+
+.main .home .next p{
+    width: fit-content;
+    display: flex;
+    padding: 0px 40px;
+    text-align: center;
+    gap: 10px;
+    align-self: center;
+}
+
+.main .home .next .bold{
+    font-size: 30px;
+}
+
+.main .home .next ol{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.main .home .next ol li{
+    width: fit-content;
+    padding: 10px 30px;
+    gap: 20px;
+    color: white;
+}
+
+.main .home .next ol .li, b{
+    color: white;
+}
+
+.main .home .image{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.main .home .image img{
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+}
+
+.main .home .marquee{
+    width: 100%;
+    display: none;
+}
+
+.main .home .marquee p marquee{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.main .home .marquee p marquee img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.main .home .div{
+    width: 100%;
+    padding: 20px 40px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    color: white;
+}
+
+.main .home .div .maps img{
+    width: 600px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.main .home .div .map-list{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .home .div .map-list ul{
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.main .home .div .map-list button{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: cyan;
+    transition: 1s;
+    color: black;
+    font-size: 16px;
+}
+
+.main .home .div .map-list button:hover{
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.main .about{
+    width: 100%;
+    height: 100%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.main .about .one{
+    width: fit-content;
+    font-size: 70px;
+    border-bottom: 1px solid cyan;
+    font-weight: 500;
+}
+
+.main .about .two{
+    width: fit-content;
+    font-size: 22px;
+    text-align: center;
+}
+
+.main .about .three{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.main .about .four{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .about .four h1{
+    font-size: 40px;
+}
+
+.main .about .four img{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.main .about .five{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.main .about .five article h2{
+    font-size: 35px;
+    color: white;
+}
+
+.main .about .five p{
+    width: fit-content;
+    font-size: 25px;
+}
+
+.main .about .six{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.main .about .six .bold{
+    font-size: 30px;
+}
+
+.main .about .six ol{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.main .about .six ol li{
+    width: fit-content;
+    padding: 0px 0px;
+    gap: 10px;
+    color: white;
+}
+
+.main .price{
+    width: 100%;
+    height: 100%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px; 
+}
+
+.main .price .price-header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .price .price-header h1{
+    width: fit-content;
+    align-self: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.main .price .price-header img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.main .price .price-header .price-header-buttons{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .price .price-header .price-header-buttons button{
+    width: 30%;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: cyan;
+    border: none;
+    transition: 1s;
+}
+
+
+.main .price .price-header .price-header-buttons button a{
+    color: black;
+}
+
+.main .price .price-header .price-header-buttons button:hover{
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.main .price .price-list{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding: 20px 40px;
+    justify-self: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .price .price-list .price-list-basic, .price-list-premium, .price-list-enter{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .price .price-list .price-list-basic h2{
+    font-size: 30px;
+    align-self: flex-start;
+    border-bottom: 1px solid cyan;
+}
+
+.main .price .price-list .price-list-basic ul{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.main .price .price-list .price-list-premium h2{
+    font-size: 30px;
+    align-self: flex-start;
+    border-bottom: 1px solid cyan;
+}
+
+.main .price .price-list .price-list-premium ul{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.main .price .price-list .price-list-enter h2{
+    font-size: 30px;
+    align-self: flex-start;
+    border-bottom: 1px solid cyan;
+}
+
+.main .price .price-list .price-list-enter ul{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.main .privacy{
+    width: 100%;
+    height: fit-content;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.main .privacy h1{
+    font-size: 30px;
+    text-align: center;
+    align-self: center;
+}
+
+.main .privacy h2{
+    font-size: 25px;
+    align-self: center;
+}
+
+.main .privacy .p{
+    font-size: 18px;
+    text-align: center;
+    align-self: center;
+}
+
+.main .privacy .privacy-info{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.main .privacy .privacy-info ul{
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 15px;
+    gap: 5px;
+}
+
+.main .disclaimer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.main .disclaimer .disclaimer-content{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.main .disclaimer .disclaimer-content h1{
+    font-size: 35px;
+}
+
+.main .disclaimer .disclaimer-content h2{
+    font-size: 30px;
+}
+
+.main .disclaimer .disclaimer-content p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.main .disclaimer .disclaimer-advice{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+}
+
+.main .disclaimer .disclaimer-advice .disclaimer-prof, .disclaimer-relationship{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.main .disclaimer .disclaimer-advice .disclaimer-prof p{
+    font-size: 17px;
+    text-align: left;
+}
+
+.main .disclaimer .disclaimer-advice .disclaimer-prof ol{
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 15px;
+}
+
+.main .disclaimer .disclaimer-advice .disclaimer-relationship ul{
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 15px;
+}
+
+.main .disclaimer .disclaimer-two{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 120px;
+}
+
+.main .disclaimer .disclaimer-two .disclaimer-service{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main .disclaimer .disclaimer-two .disclaimer-service ul{
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 15px;
+}
+
+.main .disclaimer .disclaimer-two .disclaimer-compliance{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main .disclaimer .disclaimer-two .disclaimer-compliance ol{
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 15px;
+    gap: 5px;
+}
+
+.main .disclaimer .disclaimer-three{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 120px;
+}
+
+.main .disclaimer .disclaimer-three .disclaimer-resource, .disclaimer-local{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main .disclaimer .disclaimer-three .disclaimer-resource ul{
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 15px;
+}
+
+.main .disclaimer .disclaimer-three .disclaimer-local ul{
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 15px;
+}
+
+.main .disclaimer .disclaimer-four{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 250px;
+}
+
+.main .disclaimer .disclaimer-four .disclaimer-limit, .disclaimer-serve{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.main .disclaimer .disclaimer-four .disclaimer-limit ol, ul{
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 15px;
+}
+
+.main .disclaimer .disclaimer-four .disclaimer-serve ol{
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 15px;
+}
+
+.main .disclaimer .disclaimer-five{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 400px;
+}
+
+.main .disclaimer .disclaimer-six{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    font-size: 13px;
+    padding: 20px 40px;
+    color: white;
+    border-top: 2px solid cyan;
+}
+
+.footer .footer-one{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .footer-one img{
+    width: 50px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.footer .footer-two{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .footer-two img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.footer .footer-two img:hover{
+    transform: scale(1.3);
+}
