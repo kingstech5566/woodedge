@@ -9,7 +9,7 @@ export default function Footer(){
         <section className="footer">
             <article className="footer-one">
                 <img src={image} alt="" width="100" />
-                <p>&copy;Copyrights {new Date().getFullYear()}. Allrights Reseverd published by WOODEDGE PARTNERS</p>
+                <p>&copy;Copyrights {new Date().getFullYear()}. Allrights Reseverd. WOODEDGE</p>
             </article>
             <article className="footer-two">
                 <p>Follow Us!</p>

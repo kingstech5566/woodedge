@@ -1,5 +1,8 @@
 
 import price from "./images/price.png"
+import basic from "./images/basic.png"
+import premium from "./images/premium.png"
+import enter from "./images/enterprise.png"
 export default function Price(){
     return(
         <section className="price">
@@ -14,7 +17,7 @@ export default function Price(){
         </div>
         <div className="price-list">
            <article className="price-list-basic">
-            <h2>Basic</h2>
+            <h2><img src={basic} alt="" width="30" />Basic</h2>
             <ul>
                 <li><b>$199</b> base platform fee per month</li>
                 <li>Designed for teams of <b>1-9 employees</b></li>
@@ -29,7 +32,7 @@ export default function Price(){
             </ul>
            </article>
            <article className="price-list-premium">
-            <h2>Premium</h2>
+            <h2><img src={premium} alt="" width="30" />Premium</h2>
             <ul>
                 <li><b>$299</b> base platform fee per month</li>
                 <li>Perfect for teams of <b>10-19 employees</b></li>
@@ -44,7 +47,7 @@ export default function Price(){
             </ul>
            </article>
            <article className="price-list-enter">
-            <h2>Enterprise</h2>
+            <h2><img src={enter} alt="" width="30" />Enterprise</h2>
             <ul>
                 <li><b>Contact us for pricing</b></li>
                 <li>Customized solutions for <b>20+ employees</b> or specialized requirements</li>
