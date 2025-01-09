@@ -1,5 +1,8 @@
 
 import image from "./images/img2.webp"
+import hr from "./images/hr.png"
+import legal from "./images/legal.png"
+import pay from "./images/pay.png"
 export default function What(){
     return(
         <section className="about">
@@ -38,6 +41,38 @@ export default function What(){
                     <p>Streamlined payments for contractors, EORs, and direct hires</p>
                 </article>
                 </div>
+                <div className="server">
+                    <article>
+                        <img src={hr} alt="" width="50" />
+                        <h1>HR/Recruitment</h1>
+                    </article>
+                    <article>
+                        <img src={legal} alt="" width="50" />
+                        <h1>Legal Compliance</h1>
+                    </article>
+                    <article>
+                        <img src={pay} alt="" width="50" />
+                        <h1>Payroll/Taxes</h1>
+                    </article>
+                </div>
+            </div>
+            <div className="techniques">
+                    <h1>TECHNIQUES</h1>
+                    <p>Maintaining strong employee engagement in offshore teams</p>
+                    <ul>
+                        <h2>Tailored Onboarding Programs</h2>
+                        <li>Team member starts with clarity and confidence by customizing onboarding to match their roles and cultural context.</li>
+                        <h2>Regular Virtual Check-ins</h2>
+                        <li>Schedule consistent one-on-one or team check-ins to address concerns, provide feedback, and foster open communication.</li>
+                        <h2>Performance Recognition and Rewards</h2>
+                        <li>Celebrate achievements with tailored recognition programs that resonate across cultural and individual preferences.</li>
+                        <h2>Professional Development Oppourtines</h2>
+                        <li>Offer training, certifications and career growth paths to keep employees motivated and invested in their roles.</li>
+                        <h2>Clear Communication and Transparency</h2>
+                        <li>Use tools and practices that encourage consistent updates, alignment on goals, and an inclusive feedback loop.</li>
+                        <h2>Work-Life Balance Support</h2>
+                        <li>Implement policies that respect local customs and promote flexibilty to ensure employees feel valued and balanced</li>
+                    </ul>
             </div>
         </section>
     )

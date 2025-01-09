@@ -25,13 +25,13 @@
         position: absolute;
         background-color: black;
         padding: 30px;
-        top: 100px;
+        top: 60px;
         left: -200px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 30px;
-        border-radius: 0px 0px 20px 20px;
+        border-radius: 0px 0px 20px 0px;
         transition: 1s;
     }
 
@@ -150,7 +150,7 @@
     }
     
     .main .home .div .maps img{
-        width: 350px;
+        width: 380px;
         height: 350px;
         object-fit: contain;
         align-self: center;
@@ -197,6 +197,7 @@
     .main .about .three{
         width: 100%;
         padding: 10px;
+        border-radius: 25px;
     }
     
     .main .about .four{
@@ -227,6 +228,19 @@
     .main .about .five p{
         width: fit-content;
         font-size: 23px;
+    }
+
+    .main .about .server{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .main .about .techniques p{
+        font-size: 18px;
+        align-self: center;
+        text-align: center;
     }
     
     .main .price{
