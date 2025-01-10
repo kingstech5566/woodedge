@@ -262,7 +262,7 @@ body{
 
 .main .home .image img{
     width: 600px;
-    height: 600px;
+    height: 450px;
     object-fit: contain;
 }
 
@@ -279,11 +279,11 @@ body{
 }
 
 .main .home .div .maps{
-    width: 50%;
+    width: fit-content;
 }
 .main .home .div .maps img{
     width: 600px;
-    height: 400px;
+    height: 350px;
     object-fit: contain;
 }
 
@@ -304,7 +304,7 @@ body{
     align-items: flex-start;
     color: black;
     gap: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid cyan;
 }
 
 .main .about{
@@ -496,7 +496,6 @@ body{
     width: fit-content;
     align-self: center;
     font-size: 50px;
-    font-weight: 500;
 }
 
 .main .price .price-header img{
