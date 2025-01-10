@@ -20,7 +20,7 @@
     
     .header nav{
         width: 200px;
-        height: 350px;
+        height: 3720px;
         display: flex;
         position: absolute;
         background-color: #FBEAEB;
@@ -32,8 +32,6 @@
         align-items: flex-start;
         gap: 30px;
         border-radius: 0px 0px 20px 0px;
-        transition: 1s;
-        border: 3px solid #2F3C7E;
     }
 
     .header nav a{
@@ -114,13 +112,15 @@
     
     .main .home .next{
         padding: 10px 25px;
-        justify-content: flex-start;
+        justify-content: center;
         gap: 30px;
     }
     
     .main .home .next h1{
         width: 100%;
         font-size: 40px;
+        align-self: center;
+        text-align: center;
     }
 
     
