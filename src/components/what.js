@@ -1,8 +1,5 @@
 
 import image from "./images/img2.webp"
-import hr from "./images/hr.png"
-import legal from "./images/legal.png"
-import pay from "./images/pay.png"
 export default function What(){
     return(
         <section className="about">
@@ -40,20 +37,6 @@ export default function What(){
                     <h2>✔Payments</h2>
                     <p>Streamlined payments for contractors, EORs, and direct hires</p>
                 </article>
-                </div>
-                <div className="server">
-                    <article>
-                        <img src={hr} alt="" width="50" />
-                        <h1>HR/Recruitment</h1>
-                    </article>
-                    <article>
-                        <img src={legal} alt="" width="50" />
-                        <h1>Legal Compliance</h1>
-                    </article>
-                    <article>
-                        <img src={pay} alt="" width="50" />
-                        <h1>Payroll/Taxes</h1>
-                    </article>
                 </div>
             </div>
             <div className="techniques">

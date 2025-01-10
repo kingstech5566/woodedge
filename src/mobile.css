@@ -20,12 +20,12 @@
     
     .header nav{
         width: 200px;
-        height: 300px;
+        height: 350px;
         display: flex;
         position: absolute;
-        background-color: black;
+        background-color: #FBEAEB;
         padding: 30px;
-        top: 60px;
+        top: 65px;
         left: -200px;
         flex-direction: column;
         justify-content: flex-start;
@@ -33,12 +33,14 @@
         gap: 30px;
         border-radius: 0px 0px 20px 0px;
         transition: 1s;
+        border: 3px solid #2F3C7E;
     }
 
     .header nav a{
         display: flex;
         justify-content: center;
         align-items: center;
+        color:  #2F3C7E;
         gap: 10px;
     }
 
@@ -50,9 +52,20 @@
     }
     
     .header nav a:hover{
-        color: cyan;
-        border-bottom: 2px solid cyan;
+        color:#2F3C7E;
+        border-bottom: 2px solid #2F3C7E;
         transform: scale(1.1);
+    }
+
+    .header nav button{
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        border: 2px solid #2F3C7E;
+        outline: none;
+        background-color: transparent;
+        align-self: center;
+        align-items: center;
     }
 
     .header .image{
@@ -102,13 +115,46 @@
     .main .home .next{
         padding: 10px 25px;
         justify-content: flex-start;
-        gap: 20px;
+        gap: 30px;
     }
     
     .main .home .next h1{
         width: 100%;
         font-size: 40px;
     }
+
+    
+.main .home .next .server{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.main .home .next .server article{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main .home .next .server article img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.main .home .next .server article h1{
+    font-size: 30px;
+    align-self: flex-start;
+    text-align: left;
+}
     
     .main .home .next p{
         width: 100%;

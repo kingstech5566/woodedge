@@ -11,6 +11,7 @@
 body{
     width: 100%;
     height: 100%;
+    background-color: #FBEAEB;
 }
 
 #root{
@@ -30,10 +31,9 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 25px 40px;
-    background-color: black;
+    background-color: #2F3C7E;
     position: fixed;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid cyan;
 }
 
 .header article{
@@ -61,7 +61,6 @@ body{
     justify-content: center;
     align-items: center;
     gap: 15px;
-    transition: 1s;
 }
 
 .header nav img{
@@ -78,29 +77,19 @@ body{
     border-bottom: 2px solid cyan;
 }
 
-.header div{
+.header nav button{
     width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.header div input{
-    width: 100%;
-    padding: 10px 20px;
-    border: none;
+    height: fit-content;
+    padding: 10px;
+    border: 2px solid white;
     outline: none;
+    background-color: transparent;
     border-radius: 10px;
+    transition: 1s;
 }
 
-.header div img{
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    transform: translate(5px 5px);
+.header nav button:hover{
+    transform: scale(1.1);
 }
 
 .header .image{
@@ -116,7 +105,6 @@ body{
     align-items: flex-start;
     gap: 30px;
     padding-top: 65px;
-    background-color:  white;
 }
 
 .main .home{
@@ -162,29 +150,32 @@ body{
     color: black;
 }
 
-.main .home article p button{
+.main .home .next .server{
     width: 100%;
-    padding: 10px 20px;
-    align-self: center;
-    outline: none;
-    border: none;
-    font-size: large;
-    background-color: cyan;
-    color: black;
-    border-radius: 10px;
-    transition: 1s;
-    cursor: pointer;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.main .home article p button a{
-    color: black;
+.main .home .next .server article{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-.main .home article p button:hover{
-    background-color: white;
-    color: black;
-    transform: scale(1.1);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+.main .home .next .server article img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.main .home .next .server article h1{
+    font-size: 25px;
 }
 
 .main .home .next{
@@ -204,7 +195,6 @@ body{
     font-size: 50px;
     color: black;
     font-weight: bold;
-    border-bottom: 1px solid cyan;
 }
 
 .main .home .next p{
@@ -258,12 +248,14 @@ body{
     justify-content: center;
     align-items: center;
     gap: 100px;
+    background-color: #2F3C7E;
 }
 
 .main .home .image img{
     width: 600px;
     height: 450px;
     object-fit: contain;
+    padding: 0px 10px;
 }
 
 .main .home .div{
@@ -273,7 +265,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(128, 128, 128, 0.192);
     gap: 20px;
     color: black;
 }
@@ -304,7 +295,7 @@ body{
     align-items: flex-start;
     color: black;
     gap: 10px;
-    border-bottom: 1px solid cyan;
+    border-bottom: 1px solid #2F3C7E;
 }
 
 .main .about{
@@ -321,7 +312,7 @@ body{
 .main .about .one{
     width: fit-content;
     font-size: 70px;
-    border-bottom: 1px solid cyan;
+    border-bottom: 1px solid #2F3C7E;
     font-weight: 500;
 }
 
@@ -332,17 +323,18 @@ body{
 }
 
 .main .about .three{
-    width: 80%;
+    width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    padding: 15px 30px;
-    background-color: black;
+    padding: 0px 30px;
+    background-color: #2F3C7E;
     color: white;
-    border-radius: 50px;
+    border-radius: 10px;
+    padding-bottom: 10px;
 }
 
 .main .about .four{
@@ -358,8 +350,8 @@ body{
 }
 
 .main .about .four img{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
 }
 
@@ -415,33 +407,6 @@ body{
     color: black;
 }
 
-.main .about .server{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main .about .server article{
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.main .about .server article img{
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-}
-
-.main .about .server article h1{
-    font-size: 25px;
-}
-
 .main .about .techniques{
     width: 100%;
     height: fit-content;
@@ -479,7 +444,6 @@ body{
     justify-content: flex-start;
     align-items: center;
     gap: 40px;
-    background-color: rgba(128, 128, 128, 0.192);
 }
 
 .main .price .price-header{
@@ -518,21 +482,21 @@ body{
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 10px;
-    background-color: cyan;
+    background-color: #2F3C7E;
     border: none;
     transition: 1s;
 }
 
 
 .main .price .price-header .price-header-buttons button a{
-    color: black;
+    color: white;
 }
 
 .main .price .price-header .price-header-buttons button:hover{
-    background-color: white;
     transform: scale(1.1);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
 }
+
 
 .main .price .price-list{
     width: 100%;
@@ -560,7 +524,7 @@ body{
     align-items: center;
     align-self: flex-start;
     gap: 10px;
-    border-bottom: 1px solid cyan;
+    border-bottom: 1px solid #2F3C7E;
 }
 
 .main .price .price-list .price-list-basic ul{
@@ -579,7 +543,7 @@ body{
     align-items: center;
     align-self: flex-start;
     gap: 10px;
-    border-bottom: 1px solid cyan;
+    border-bottom: 1px solid #2F3C7E;
 }
 
 .main .price .price-list .price-list-premium ul{
@@ -598,7 +562,7 @@ body{
     align-items: center;
     gap: 10px;
     align-self: flex-start;
-    border-bottom: 1px solid cyan;
+    border-bottom: 1px solid #2F3C7E;
 }
 
 .main .price .price-list .price-list-enter ul{
@@ -664,7 +628,6 @@ body{
     align-items: flex-start;
     gap: 20px;
     padding: 20px 40px;
-    background-color: rgba(128, 128, 128, 0.192);
 }
 
 .main .disclaimer .disclaimer-content{
@@ -855,11 +818,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #2F3C7E;
     font-size: 13px;
     padding: 20px 40px;
     color: white;
-    border-top: 2px solid cyan;
 }
 
 .footer .footer-one{
