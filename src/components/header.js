@@ -9,7 +9,7 @@ import privacy from "./images/privacy.png"
 import disclaimer from "./images/disclaimer.png"
 export default function Header(){
 
-    const [imageSrc, setImageSrc] = useState(menu)
+    const [imageSrc] = useState(menu)
     const [slide, setSlide] = useState(false)
     const [isOpen, setIsOpen] = useState(false)
     const navRef = useRef(null)
