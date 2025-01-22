@@ -14,7 +14,7 @@ export default function Footer(){
                 <p>&copy;Copyrights {new Date().getFullYear()}. Allrights Reseverd. WOODEDGE</p>
                 </article>
                 <article className="footer-link">
-                    <Link to="/privacy">Privacy</Link>
+                    <Link to="/privacy">Privacy Policy</Link>
                     <Link to="/disclaimer">Disclaimer</Link>
                 </article>
             </div>

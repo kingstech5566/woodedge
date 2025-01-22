@@ -2,6 +2,7 @@
 import image from "./images/img2.webp"
 import tech from "./images/tech.png"
 import eor from "./images/eor.png"
+import img from "./images/img2.webp"
 export default function What(){
     return(
         <section className="about">
@@ -43,6 +44,7 @@ export default function What(){
                 </div>
             </div>
             <div className="divs">
+                <img src={img} alt="" />
             <h1>TECHNIQUES</h1>
             <p>Maintaining strong employee engagement in offshore teams</p>
             <div className="div">

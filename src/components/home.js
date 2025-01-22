@@ -2,6 +2,7 @@
 import port from "./images/img3.png"
 import port1 from "./images/img4.png"
 import map from "./images/map.png"
+import image from "./images/img1.jpg"
 export default function Home(){
     return(
         <section className="home">
@@ -16,6 +17,7 @@ export default function Home(){
                 </p>
             </article>
             <div className="next">
+                <img src={image} alt="" />
                 <h1>WHAT WE DO</h1>
                 <p>
                     At WoodEdge Partners, we specialize in comprenhensive Employer of Record (EOR) services in Nigeria, offering seamless workforce management for foreign companies aiming to expand or extend without establishing a local entity. We handle the complexities of Nigerian employment compliance, HR management, and payroll, so you can focus on your core business goals. 

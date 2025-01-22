@@ -3,9 +3,11 @@ import price from "./images/price.png"
 import basic from "./images/basic.png"
 import premium from "./images/premium.png"
 import enter from "./images/enterprise.png"
+import image from "./images/img1.jpg"
 export default function Price(){
     return(
         <section className="price">
+            <img src={image} alt="" className="img" />
         <div className="price-header">
             <h1>PRICING</h1>
             <img src={price} alt="" width="200" />

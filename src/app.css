@@ -193,6 +193,10 @@ body{
     gap: 20px;
 }
 
+.main .home .next img{
+    display: none;
+}
+
 .main .home .next h1{
     width: fit-content;
     align-self: center;
@@ -465,6 +469,10 @@ body{
     gap: 10px;
 }
 
+.main .about .divs img{
+    display: none;
+}
+
 .main .about .divs .div{
     width: 100%;
     height: fit-content;
@@ -512,6 +520,7 @@ body{
 
 .main .about .div .techniques ul li{
     font-size: 16px;
+    white-space: normal;
 }
 
 .main .about .div .tech{
@@ -538,6 +547,10 @@ body{
     justify-content: flex-start;
     align-items: center;
     gap: 40px;
+}
+
+.main .price .img{
+    display: none;
 }
 
 .main .price .price-header{
@@ -921,7 +934,7 @@ body{
 
 .footer{
     width: 100%;
-    height: 150px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
