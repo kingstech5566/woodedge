@@ -23,35 +23,28 @@
         height: 400px;
         display: flex;
         position: absolute;
-        background-color: #FBEAEB;
+        background-color: white;
         padding: 30px;
         top: 65px;
         left: -200px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 30px;
+        gap: 20px;
         border-radius: 0px 0px 20px 0px;
+        transition: 1s;
     }
 
     .header nav a{
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        color:  #2F3C7E;
+        color:  black;
         gap: 10px;
-    }
-
-    .header nav a img{
-        display: flex;
-        width: 20px;
-        height: 20px;
-        object-fit: contain;
     }
     
     .header nav a:hover{
-        color:#2F3C7E;
-        border-bottom: 2px solid #2F3C7E;
+        color:white;
         transform: scale(1.1);
     }
 
@@ -59,11 +52,17 @@
         width: fit-content;
         height: fit-content;
         padding: 10px;
-        border: 2px solid #2F3C7E;
+        position: absolute;
+        top: 200px;
+        left: 20px;
+        border: none;
         outline: none;
-        background-color: transparent;
-        align-self: center;
-        align-items: center;
+        background-color: #008080;
+        text-align: left;
+    }
+
+    .header nav button a{
+        color: white;
     }
 
     .header .image{
@@ -88,6 +87,19 @@
     .main{
         padding-top: 0px;
     }
+
+    .main .home .wall{
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+    }
+    
+    .main .home .wall h2{
+        font-size: 45px;
+        color: white;
+        text-align: center;
+        align-self: center;
+    } 
     
     .main .home article h1{
         font-size: 40px;
@@ -122,39 +134,6 @@
         align-self: center;
         text-align: center;
     }
-
-    
-.main .home .next .server{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
-}
-
-.main .home .next .server article{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.main .home .next .server article img{
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-}
-
-.main .home .next .server article h1{
-    font-size: 30px;
-    align-self: flex-start;
-    text-align: left;
-}
     
     .main .home .next p{
         width: 100%;
@@ -177,17 +156,29 @@
         gap: 10px;
         color: black;
     }
-    
+
     .main .home .image{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    
+    .main .home .image article{
         width: 100%;
         flex-direction: column;
         gap: 0px;
     }
+
+    .main .home .image h2, p{
+        align-self: center;
+        text-align: center;
+
+    }
     
-    .main .home .image img{
-        width: 100%;
-        height: 300px;
+    .main .home .image article img{
+        width: 350px;
+        height: 100%;
         object-fit: contain;
+        align-self: center;
     }
     
     .main .home .div{
@@ -212,20 +203,20 @@
         border-right: none;
     }
     
-    .main .home .div .map-list a{
-        width: 100%;
-        background-color: cyan;
-    }
-    
-    .main .home .div .map-list a:hover{
-        background-color: white;
-        transform: scale(1.1);
-    }
-    
     .main .about{
         width: 100%;
         padding: 10px 10px;
         gap: 30px;
+    }
+
+    .main .about .area{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .main .about .area img{
+        width: 100%;
+        height: 100%;
     }
     
     .main .about .one{
@@ -287,6 +278,25 @@
         justify-content: center;
         align-items: flex-start;
     }
+    
+    .main .about .divs .div{
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+    
+    .main .about .div .techniques{
+        width: 100%;
+    }
+    
+    .main .about .div .tech{
+        width: 100%;
+    }
+    
+    .main .about .div .tech img{
+        width: 100%;
+        height: 100%;
+    }
+    
 
     .main .about .techniques p{
         font-size: 18px;
@@ -347,6 +357,40 @@
         text-align: left;
         align-self: center;
     }
+
+    .main .privacy .price-header .para{
+        width: 100%;
+        align-self: flex-start;
+        text-align: left;
+    }
+    
+.main .privacy .privacy-info{
+    width: 100%;
+}
+
+
+.main .privacy .privacy-info{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.main .privacy .privacy-info h3{
+    align-self: flex-start;
+}
+
+
+.main .privacy .privacy-info ul{
+    width: 100%;
+    height: fit-content;
+    padding: 0px 15px;
+    gap: 5px;
+}
+
     
     .main .disclaimer{
         padding: 10px 20px;
@@ -494,25 +538,34 @@
     
     .footer{
         width: 100%;
-        height: 100px;
+        height: 150px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 10px;
-        padding: 0px 10px;
+        gap: 15px;
+        padding: 10px 10px;
     }
     
     .footer .footer-one{
-        width: 100%;
-        height: fit-content;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 10px;
+        flex-direction: column;
     }
     
     .footer .footer-one img{
         width: 40px;
+    }
+
+    .footer .footer-one .footer-link{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .footer .footer-one .footer-link a{
+        text-decoration: underline;
+        color: white;
     }
     
     .footer .footer-two img{

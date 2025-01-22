@@ -8,7 +8,7 @@ export default function Privacy(){
             <p className="p">WoodEdge Partners ("WoodEdge," "we," "us," or "our"), headquartered at [Insert Address], Lagos, Nigeria, provides Employer of Record (EOR) services, recruitment solutions, and related services. This Privacy Policy outlines how we collect, use, protect, and handle your personal information.</p>
             <article className="privacy-header">
                 <h3>Scope of Application</h3>
-                <p>This Privacy Policy applies to:</p>
+                <p className="para">This Privacy Policy applies to:</p>
                 <ul>
                     <li>Clients utilizing our EOR services</li>
                     <li>Contractors and employees managed through our platform</li>

@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom"
 import email from "./images/mail.png"
 import link from "./images/linked.png"
 import insta from "./images/insta.png"
@@ -7,10 +8,16 @@ import image from "./images/footer.png"
 export default function Footer(){
     return(
         <section className="footer">
-            <article className="footer-one">
+            <div className="footer-one">
+                <article className="foot">
                 <img src={image} alt="" width="100" />
                 <p>&copy;Copyrights {new Date().getFullYear()}. Allrights Reseverd. WOODEDGE</p>
-            </article>
+                </article>
+                <article className="footer-link">
+                    <Link to="/privacy">Privacy</Link>
+                    <Link to="/disclaimer">Disclaimer</Link>
+                </article>
+            </div>
             <article className="footer-two">
                 <p>Follow Us!</p>
                 <a href="mailto:info@woodedgepartners.com"><img src={email} alt="" /></a>

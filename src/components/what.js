@@ -1,8 +1,11 @@
 
 import image from "./images/img2.webp"
+import tech from "./images/tech.png"
+import eor from "./images/eor.png"
 export default function What(){
     return(
         <section className="about">
+        <div className="area"><img src={eor} alt="" /></div>
             <h1 className="one">WHAT WE DO</h1>
             <p className="two">At WoodEdge Partners, we specialize in comprehensive Employer of Record (EOR) services in Nigeria, offering seamless workforce management for foreign companies aiming to expand without establishing a local entity. We handle the complexities of Nigerian employment compliance, HR management, and payroll, so you can focus on your core business goals.<br/> Our services are tailored to meet the unique needs of international companies navigating Nigeria’s employment landscape. From managing employee benefits and onboarding to ensuring legal compliance with Nigeria’s labor laws, we deliver cost-effective, efficient solutions for your offshore teams.</p>
             <div className="six">
@@ -39,9 +42,11 @@ export default function What(){
                 </article>
                 </div>
             </div>
-            <div className="techniques">
-                    <h1>TECHNIQUES</h1>
-                    <p>Maintaining strong employee engagement in offshore teams</p>
+            <div className="divs">
+            <h1>TECHNIQUES</h1>
+            <p>Maintaining strong employee engagement in offshore teams</p>
+            <div className="div">
+                <article className="techniques">
                     <ul>
                         <h2>Tailored Onboarding Programs</h2>
                         <li>Team member starts with clarity and confidence by customizing onboarding to match their roles and cultural context.</li>
@@ -56,6 +61,11 @@ export default function What(){
                         <h2>Work-Life Balance Support</h2>
                         <li>Implement policies that respect local customs and promote flexibilty to ensure employees feel valued and balanced</li>
                     </ul>
+                </article>
+                <article className="tech">
+                    <img src={tech} alt="" />
+                </article>
+            </div>
             </div>
         </section>
     )

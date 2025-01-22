@@ -2,35 +2,21 @@
 import port from "./images/img3.png"
 import port1 from "./images/img4.png"
 import map from "./images/map.png"
-import hr from "./images/hr.png"
-import legal from "./images/legal.png"
-import pay from "./images/pay.png"
 export default function Home(){
     return(
         <section className="home">
+            <div className="wall">
+                <h2>WOODEDGE PARTNERS</h2>
+                 <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSeV20GwyIfojn9ze9FksZY05ZXaHnq_Dk7iRcQI6q_l7HNEyQ/viewform">Start Today</a></button></div>
             <article>
-                <h1>WOODEDGE PARTNERS</h1>
+                <h1>WOODEDGE <b className="h1">PARTNERS</b></h1>
                 <p>
-                <b>With WoodEdge Partners as your EOR in Nigeria, you gain a trusted partner that understands the local market, prioritizes cost-effective and compliant solutions, and enables your business to grow with confidence. Reach out today to discover how our expertise in EOR, HR services, and employment compliance can streamline your expansion into Nigeria.</b>
-                <b>We provide a comprehensive EOR solution to help you hire, pay, and manage your international team. Our tailored approach simplifies HR, ensures compliance, and empowers your business to grow without borders.</b>
+                With WoodEdge Partners as your EOR in Nigeria, you gain a trusted partner that understands the local market, prioritizes cost-effective and compliant solutions, and enables your business to grow with confidence. Reach out today to discover how our expertise in EOR, HR services, and employment compliance can streamline your expansion into Nigeria.<br/>
+                We provide a comprehensive EOR solution to help you hire, pay, and manage your international team. Our tailored approach simplifies HR, ensures compliance, and empowers your business to grow without borders.
                 </p>
             </article>
             <div className="next">
                 <h1>WHAT WE DO</h1>
-                <div className="server">
-                    <article>
-                        <img src={hr} alt="" width="50" />
-                        <h1>HR/Recruitment</h1>
-                    </article>
-                    <article>
-                        <img src={legal} alt="" width="50" />
-                        <h1>Legal Compliance</h1>
-                    </article>
-                    <article>
-                        <img src={pay} alt="" width="50" />
-                        <h1>Payroll/Taxes</h1>
-                    </article>
-                </div>
                 <p>
                     At WoodEdge Partners, we specialize in comprenhensive Employer of Record (EOR) services in Nigeria, offering seamless workforce management for foreign companies aiming to expand or extend without establishing a local entity. We handle the complexities of Nigerian employment compliance, HR management, and payroll, so you can focus on your core business goals. 
                 </p>
@@ -44,8 +30,12 @@ export default function Home(){
                 </ol>
             </div>
             <div className="image">
+            <h2>WOODEDGE PARTNERS</h2>
+            <p>One solution, worldwide reach—locally tailored for your success</p>
+            <article>
             <img src={port} alt="" width="200" />
             <img src={port1} alt="" width="200" />
+            </article>
             </div>
             <div className="div">
                 <article className="maps">
