@@ -3,7 +3,7 @@ import price from "./images/price.png"
 import basic from "./images/basic.png"
 import premium from "./images/premium.png"
 import enter from "./images/enterprise.png"
-import image from "./images/img1.jpg"
+import image from "./images/img2.webp"
 export default function Price(){
     return(
         <section className="price">
