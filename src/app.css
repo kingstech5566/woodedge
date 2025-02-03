@@ -107,7 +107,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 .main .home{
@@ -121,34 +121,58 @@ body{
 
 .main .home .wall{
     width: 100%;
-    height: 550px;
+    height: 390px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("./components/images/wall.png");
-    background-position: center center;
-    background-size: 100%;
+    background-color: #008080;
+    border-radius: 0px 0px 0px 100px;
+}
+
+.main .home .wall .wall-one{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-items: center;
     gap: 20px;
 }
 
-.main .home .wall h2{
-    font-size: 65px;
+.main .home .wall .wall-one h2{
+    font-size: 50px;
     color: white;
 }
 
-.main .home .wall button{
+.main .home .wall .wall-one button{
     padding: 15px 60px;
-    background-color: #008080;
+    background-color: transparent;
     font-size: 18px;
     outline: none;
-    border: none;
+    border: 1px solid white;
     border-radius: 50px;
     cursor: pointer;
 }
 
 .main .home .wall button a{
     color: white;
+}
+
+.main .home .wall .wall-one button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.9);
+}
+
+.main .home .wall .wall-two{
+    width: 100%;
+    height: fit-content;
+    padding: 0px;
+}
+
+.main .home .wall .wall-two img{
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
 }
 
 .main .home article{
@@ -161,16 +185,6 @@ body{
     gap: 10px;
 }
 
-.main .home article h1{
-    font-size: 45px;
-    align-self: center;
-    color: black;
-}
-
-.main .home article h1 .h1{
-    color: #008080;
-}
-
 .main .home article p{
     width: fit-content;
     height: fit-content;
@@ -179,7 +193,9 @@ body{
     justify-content: center;
     align-items: center;
     color: black;
-    font-size: 18px;
+    gap: 10px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .main .home .next{
@@ -190,7 +206,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .main .home .next img{
@@ -213,6 +229,7 @@ body{
     gap: 10px;
     align-self: center;
     color: black;
+    font-size: 20px;
 }
 
 .main .home .next .bold{
@@ -226,8 +243,13 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     color: black;
+}
+
+.main .home .next ol b{
+    color: black;
+    font-size: 20px;
 }
 
 .main .home .next ol li{
@@ -235,7 +257,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     padding: 10px 30px;
-    gap: 20px;
+    gap: 10px;
     color: black;
 }
 
@@ -328,6 +350,84 @@ body{
     border-bottom: 1px solid black;
 }
 
+.main .home .card{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    background-color: #008080;
+    border-radius: 70px 70px 0px 0px;
+}
+
+.main .home .card .card-list{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .home .card .card-list h2{
+    font-size: 40px;
+    color: white;
+}
+
+.main .home .card .card-list p{
+    font-size: 20px;
+    color: white;
+}
+
+.main .home .card .card-list article{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .home .card .card-list article button{
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main .home .card .card-list article .button{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.main .home .card .card-list article .button a{
+    color: white;
+}
+
+.main .home .card .card-list article button:hover{
+    transform: scale(1.1);
+}
+
+.main .home .card .card-image{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+}
+
+.main .home .card .card-image img{
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+
 .main .about{
     width: 100%;
     height: 100%;
@@ -358,7 +458,7 @@ body{
 
 .main .about .two{
     width: fit-content;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -451,7 +551,7 @@ body{
     padding: 0px 0px;
     gap: 10px;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .main .about .six ol li b{
@@ -466,11 +566,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 25px;
     gap: 10px;
+    background-color: #008080;
+    border-radius: 50px;
 }
 
 .main .about .divs img{
-    display: none;
+    display: flex;
 }
 
 .main .about .divs .div{
@@ -480,7 +583,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 0px 5px;
-    gap: 0px;
+    gap: 10px;
 }
 
 .main .about .div .techniques{
@@ -496,12 +599,14 @@ body{
 .main .about .divs h1{
     font-size: 40px;
     align-self: center;
+    color: white;
 
 }
 
 .main .about .divs p{
     font-size: 20px;
     align-self: center;
+    color: white;
 }
 
 .main .about .div .techniques ul{
@@ -516,11 +621,13 @@ body{
 
 .main .about .div .techniques ul h2{
     font-size: 20px;
+    color: white;
 }
 
 .main .about .div .techniques ul li{
     font-size: 16px;
     white-space: normal;
+    color: white;
 }
 
 .main .about .div .tech{
@@ -533,7 +640,7 @@ body{
 
 .main .about .div .tech img{
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: contain;
     border-radius: 20px;
 }
@@ -597,6 +704,7 @@ body{
 
 .main .price .price-header .price-header-buttons button a{
     color: white;
+    font-size: 20px;
 }
 
 .main .price .price-header .price-header-buttons button:hover{
@@ -626,6 +734,16 @@ body{
     background-color: #008080;
     border-radius: 20px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.9);
+}
+
+.main .price .price-list .price-list-enter b{
+    color: white;
+    font-size: 33px;
+}
+
+.main .price .price-list .price-list-basic, .price-list-premium, b{
+    color: white;
+    font-size: 31px;
 }
 
 .main .price .price-list .price-list-basic h2{
@@ -703,6 +821,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
+    color: black;
 }
 
 .main .privacy h1{
@@ -737,6 +856,11 @@ body{
     height: fit-content;
     padding: 0px 15px;
     gap: 5px;
+}
+
+.main .privacy .privacy-info b{
+    color: black;
+    font-size: 20px;
 }
 
 .main .disclaimer{
@@ -934,7 +1058,7 @@ body{
 
 .footer{
     width: 100%;
-    height: 100px;
+    height: 130px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1000,4 +1124,26 @@ body{
 
 .footer .footer-two img:hover{
     transform: scale(1.3);
+}
+
+.footer .footer-three{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-three p{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .footer-three img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }

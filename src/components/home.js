@@ -1,16 +1,19 @@
-
+import { Link } from "react-router-dom"
 import port from "./images/img3.png"
 import port1 from "./images/img4.png"
 import map from "./images/map.png"
-import image from "./images/img1.jpg"
+import image from "./images/employ.jpg"
+import card from "./images/teches.jpg"
+import wall from "./images/wall.png"
 export default function Home(){
     return(
         <section className="home">
             <div className="wall">
-                <h2>WOODEDGE PARTNERS</h2>
-                 <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSeV20GwyIfojn9ze9FksZY05ZXaHnq_Dk7iRcQI6q_l7HNEyQ/viewform">Start Today</a></button></div>
+                <article className="wall-one"><h2>WOODEDGE PARTNERS</h2>
+                <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSeV20GwyIfojn9ze9FksZY05ZXaHnq_Dk7iRcQI6q_l7HNEyQ/viewform">Start Today</a></button></article>
+                <article className="wall-two"><img src={wall} alt="" /></article>
+              </div>
             <article>
-                <h1>WOODEDGE <b className="h1">PARTNERS</b></h1>
                 <p>
                 With WoodEdge Partners as your EOR in Nigeria, you gain a trusted partner that understands the local market, prioritizes cost-effective and compliant solutions, and enables your business to grow with confidence. Reach out today to discover how our expertise in EOR, HR services, and employment compliance can streamline your expansion into Nigeria.<br/>
                 We provide a comprehensive EOR solution to help you hire, pay, and manage your international team. Our tailored approach simplifies HR, ensures compliance, and empowers your business to grow without borders.
@@ -51,6 +54,20 @@ export default function Home(){
                         <li>Local expertise in legal, tax, and accounting compliance</li>
                         <li>Recruitment</li>
                     </ul>
+                </article>
+            </div>
+            <div className="card">
+                <article className="card-list">
+                    <h2>Build Your Career On Your Terms</h2>
+                    <h2>@WOODEDGE PARTNERS</h2>
+                    <p>We help you expand your business, hire, pay, and manage your global team without the hassle of setting up a local legal entity. Our tailored solutions fit companies of any size. We handle all administrative tasks and compliance, ensuring your team feels truly valued and cared for.</p>
+                    <article>
+                    <Link to="/price"><button>Get STARTED</button></Link>
+                    <button className="button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeV20GwyIfojn9ze9FksZY05ZXaHnq_Dk7iRcQI6q_l7HNEyQ/viewform">MEET AN EXPERT</a></button>
+                    </article>
+                </article>
+                <article className="card-image">
+                    <img src={card} alt="" />
                 </article>
             </div>
         </section>
