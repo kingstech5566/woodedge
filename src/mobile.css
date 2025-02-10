@@ -110,6 +110,7 @@
 .main .home .wall .wall-one button{
     padding: 15px 60px;
     transition: 1s;
+    width: 90%;
 }
 
 .main .home .wall .wall-one button:hover{
@@ -143,6 +144,42 @@
     .main .home article p button{
         width: 100%;
     }
+
+    
+.main .home .work{
+    flex-direction: column;
+    padding: 20px 8px;
+}
+
+.main .home .work .work-list h2{
+    font-size: 40px;
+    color: white;
+    align-self: center;
+}
+
+.main .home .work .work-list p{
+    font-size: 20px;
+    color: white;
+}
+
+.main .home .work .work-list .work-button{
+    display: flex;
+    flex-direction: column;
+}
+
+.main .home .work .work-image p{
+    font-size: 16px;
+}
+
+.main .home .work .work-image p b{
+    font-size: 18px;
+}
+
+.main .home .work .work-image p img{
+    width: 40px;
+    height: 40px;
+}
+
     
     .main .home .next{
         padding: 15px;
@@ -168,7 +205,6 @@
     .main .home .next p{
         width: 100%;
         padding: 0px 0px;
-        text-align: center;
         align-self: center;
     }
     
@@ -237,7 +273,7 @@
         height: 100%;
         flex-direction: column-reverse;
         gap: 20px;
-        padding: 0px;
+        padding: 5px;
         border-radius:0px;
     }
     
@@ -257,6 +293,21 @@
         font-size: 18px;
         color: white;
     }
+
+    .main .home .card .card-list .card-button{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .home .card .card-list .card-button button{
+        width: 100%;
+    }
+
+    .main .home .card .card-list .card-button a{
+        width: 100%;
+        cursor: pointer;
+    }
     
     .main .home .card .card-image{
         width: 100%;
@@ -269,7 +320,120 @@
         height: 100%;
         object-fit: contain;
     }
+
     
+.main .home .cover{
+    padding: 10px;
+}
+
+.main .home .cover .cover-first{
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.main .home .cover .cover-first h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.main .home .cover .cover-first p{
+    font-size: 20px;
+}
+
+.main .home .cover .cover-first button{
+    width: 100%;
+}
+
+.main .home .cover .cover-second{
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+}
+
+.main .home .cover .cover-second h2{
+    font-size: 35px;
+    align-self: flex-start;
+}
+
+.main .home .cover .cover-second p{
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+.main .home .cover .cover-second article{
+    width: 100%;
+    flex-direction: column;
+}
+
+.main .home .cover .cover-second article .cover-third{
+    width:  100%;
+    height: 100%;
+}
+
+.main .home .cover .cover-second article .cover-third .cover-image{
+    width: 70%;
+    height: 45px;
+    top: 50px;
+    gap: 5px;
+}
+
+.main .home .cover .cover-second article .cover-third .cover-image img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.main .home .cover .cover-second article .cover-third .cover-p{
+    padding-top: 50%;
+}
+
+.main .home .cover .cover-second article .cover-third .cover-p b{
+    font-size: 40px;
+}
+
+.main .home .cover .cover-second article .cover-glo{
+    width:  100%;
+    height: 100%;
+}
+
+.main .home .cover .cover-second article .cover-glo p{
+    width: 33%;
+    padding-bottom: 10px;
+}
+
+.main .home .cover .cover-second article .cover-glo p b{
+    font-size: 30px;
+}
+
+.main .home .cover .cover-second article .cover-glo p i{
+    color: white;
+}
+
+.main .home .cover .cover-second article .cover-world{
+    width: 100%;
+    height: 100%;
+}
+
+.main .home .cover .cover-second article .cover-world img{
+    width: 100%;
+    height: 50%;
+    right: -70px;
+}
+
+.main .home .cover .cover-second article .cover-world p{
+    width: 70%;
+    padding-top: 45%;
+}
+
+.main .home .cover .cover-second article .cover-world p b{
+    font-size: 30px;
+}
+
+.main .home .cover .cover-second article .cover-world p i{
+    color: white;
+}
     
     .main .about{
         width: 100%;
@@ -660,12 +824,11 @@
     }
 
     .footer .footer-one .footer-link{
-        width: fit-content;
+        width: 100%;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 5px;
+        gap: 15px;
     }
     
     .footer .footer-one .footer-link a{

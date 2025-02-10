@@ -5,6 +5,14 @@ import map from "./images/map.png"
 import image from "./images/employ.jpg"
 import card from "./images/teches.jpg"
 import wall from "./images/wall.png"
+import tick from "./images/ticker.png"
+import usa from "./images/usa.png"
+import uk from "./images/uk.png"
+import france from "./images/france.png"
+import greece from "./images/greece.png"
+import czech from "./images/czech.png"
+import glo from "./images/gloup.png"
+import world from "./images/world.png"
 export default function Home(){
     return(
         <section className="home">
@@ -19,6 +27,22 @@ export default function Home(){
                 We provide a comprehensive EOR solution to help you hire, pay, and manage your international team. Our tailored approach simplifies HR, ensures compliance, and empowers your business to grow without borders.
                 </p>
             </article>
+            <div className="work">
+                <article className="work-list">
+                    <h2>Work Payments & Employer of Records solutions</h2>
+                    <p>We help you expand your business, hire, pay, and manage your global team without the hassle of setting up a local legal entity. Our tailored solutions fit companies of any size. We handle all administration tasks and compliance, ensuring your team feels truly valued and cared for.</p>
+                    <p className="work-button">
+                    <button><Link to="/price">Get started</Link></button>
+                    <button className="butt"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeV20GwyIfojn9ze9FksZY05ZXaHnq_Dk7iRcQI6q_l7HNEyQ/viewform">Talk to an Expert</a></button>
+                    </p>
+                </article>
+                <article className="work-image">
+                    <p><img src={tick} alt="" /><b>40% faster</b> operational processes</p>
+                    <p><img src={tick} alt="" />Cut admin time by <b>90%</b></p>
+                    <p><img src={tick} alt="" />Onboard <b>3x faster</b></p>
+                    <p><img src={tick} alt="" /><b>Time is money. Don't waste time</b></p>
+                </article>
+            </div>
             <div className="next">
                 <img src={image} alt="" />
                 <h1>WHAT WE DO</h1>
@@ -61,7 +85,7 @@ export default function Home(){
                     <h2>Build Your Career On Your Terms</h2>
                     <h2>@WOODEDGE PARTNERS</h2>
                     <p>We help you expand your business, hire, pay, and manage your global team without the hassle of setting up a local legal entity. Our tailored solutions fit companies of any size. We handle all administrative tasks and compliance, ensuring your team feels truly valued and cared for.</p>
-                    <article>
+                    <article className="card-button">
                     <Link to="/price"><button>Get STARTED</button></Link>
                     <button className="button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeV20GwyIfojn9ze9FksZY05ZXaHnq_Dk7iRcQI6q_l7HNEyQ/viewform">MEET AN EXPERT</a></button>
                     </article>
@@ -70,6 +94,46 @@ export default function Home(){
                     <img src={card} alt="" />
                 </article>
             </div>
+            <div className="cover">
+            <article className="cover-first">
+                <h2>Each individual is different.</h2>
+                <p>We look after your employees better than anyone else.</p>
+                <button>Explore employee solutions</button>
+            </article>
+            <article className="cover-second">
+                <h2>Global coverage</h2>
+                <p>One solution, worldwide reach—locally tailored for your success</p>
+                <article>
+                    <p className="cover-third">
+                        <b className="cover-image">
+                            <img src={usa} alt="" />
+                            <img src={uk} alt="" />
+                            <img src={france} alt="" />
+                            <img src={greece} alt="" />
+                            <img src={czech} alt="" />
+                        </b>
+                       <p className="cover-p">
+                       <b>85+</b>
+                       <i>countries worldwide</i>
+                       </p>
+                    </p>
+                    <p className="cover-glo">
+                        <img src={glo} alt="" />
+                       <p>
+                       <b>300</b>
+                       <i>employers served</i>
+                       </p>
+                    </p>
+                    <p className="cover-world">
+                        <img src={world} alt="" />
+                        <p>
+                        <b>Personalised approach</b>
+                        <i>across the globe</i>
+                        </p>
+                    </p>
+                </article>
+            </article>
+        </div>
         </section>
     )
 }
